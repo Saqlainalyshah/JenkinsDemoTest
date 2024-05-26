@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building App...'
-                sh  'node --version'
+                sh 'node --version'
             }
         }
         stage('Test') {
@@ -13,11 +13,10 @@ pipeline {
                 echo 'Testing App...'
                 sh 'gcloud compute zones list'
                 echo "This is my IP"
-                curl -s ifconfig.co
+                sh 'curl -s ifconfig.co'
                 echo "This is my hostname"
-                hostname -f
-
+                sh 'hostname -f'
             }
-}
-}
+        }
+    }
 }
