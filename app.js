@@ -1,5 +1,4 @@
-console.log("Hello Jenkins!");
-console.log("Hello saqlain!");
+console.log("Nothing!");
 
 
 
